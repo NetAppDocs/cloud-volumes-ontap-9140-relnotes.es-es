@@ -18,6 +18,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidad máxima del sistema por licencia
 
 La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
@@ -51,6 +52,7 @@ El límite de capacidad corresponde a todo el par de alta disponibilidad. No es 
 
 
 
+[[aggregate-limits]]
 == Límites del agregado
 
 Cloud Volumes ONTAP usa almacenamiento de Azure como discos y los agrupa en _agregados_. Los agregados proporcionan almacenamiento para volúmenes.
@@ -83,6 +85,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits-by-vm-size]]
 == Límites de discos y almacenamiento por niveles por tamaño de equipo virtual
 
 Los límites de capacidad son diferentes en función del tamaño de las máquinas virtuales que utilice y de si se utiliza un sistema de nodo único o un par de alta disponibilidad.
@@ -101,6 +104,7 @@ Los límites no incluyen el disco raíz, el disco principal y el VNVRAM.
 
 
 
+[[limits-for-capacity-based-licensing]]
 === Límites para licencias basadas en capacidad
 
 Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga información sobre las opciones de licencias de Cloud Volumes ONTAP"^]
@@ -274,6 +278,7 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 |===
 
 
+[[limits-for-node-based-licensing]]
 === Límites para licencias basadas en nodos
 
 Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP que utilizan licencias basadas en nodos, que es el modelo de licencias de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. La licencia basada en nodos sigue estando disponible para los clientes existentes.
@@ -504,6 +509,7 @@ Las parejas de ALTA DISPONIBILIDAD tienen dos tipos de configuración: BLOB de p
 ====
 
 
+[[storage-vm-limits]]
 == Límites de máquinas virtuales de almacenamiento
 
 Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
@@ -549,6 +555,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[file-and-volume-limits]]
 == Límites de archivos y volúmenes
 
 [cols="22,22,56"]
@@ -591,6 +598,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[iscsi-storage-limits]]
 == Límites de almacenamiento de iSCSI
 
 [cols="3*"]

@@ -18,6 +18,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidad máxima del sistema por licencia
 
 La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
@@ -56,6 +57,7 @@ No, no lo hace. Los datos de una pareja de alta disponibilidad de AWS se replica
 
 
 
+[[aggregate-limits]]
 == Límites del agregado
 
 Cloud Volumes ONTAP usa volúmenes de EBS como discos y los agrupa en _aggregates_. Los agregados proporcionan almacenamiento para volúmenes.
@@ -95,6 +97,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits-by-ec2-instance]]
 == Límites de discos y organización en niveles por instancia de EC2
 
 Los límites de capacidad son diferentes en función de la familia de tipos de instancia de EC2 que se utilice y si se utiliza un sistema de nodo único o un par de alta disponibilidad.
@@ -111,6 +114,7 @@ Los límites no incluyen el disco de arranque ni el disco raíz.
 
 
 
+[[limits-for-capacity-based-licensing]]
 === Límites para licencias basadas en capacidad
 
 Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga información sobre las opciones de licencias de Cloud Volumes ONTAP"^]
@@ -159,6 +163,7 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 
 
 
+[[limits-for-node-based-licensing]]
 === Límites para licencias basadas en nodos
 
 Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP que utilizan licencias basadas en nodos, que es el modelo de licencias de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. La licencia basada en nodos sigue estando disponible para los clientes existentes.
@@ -263,6 +268,7 @@ AWS Secret Cloud y las regiones Top Secret Cloud admiten la compra de múltiples
 
 
 
+[[storage-vm-limits]]
 == Límites de máquinas virtuales de almacenamiento
 
 Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
@@ -307,6 +313,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[storage-vm-limit-by-ec2-instance-type]]
 === Límite de máquina virtual de almacenamiento por tipo de instancia de EC2
 
 Al crear una máquina virtual de almacenamiento adicional, tiene que asignar direcciones IP privadas al puerto e0a. En la siguiente tabla se identifica el número máximo de IP privadas por interfaz, así como el número de direcciones IP disponibles en el puerto e0a una vez que se ha implementado Cloud Volumes ONTAP. La cantidad de direcciones IP disponibles afecta directamente al número máximo de equipos virtuales de almacenamiento para esa configuración.
@@ -408,6 +415,7 @@ Dado que requiere una dirección IP privada, limitará la cantidad de equipos vi
 
 
 
+[[file-and-volume-limits]]
 == Límites de archivos y volúmenes
 
 [cols="22,22,56"]
@@ -450,6 +458,7 @@ Dado que requiere una dirección IP privada, limitará la cantidad de equipos vi
 
 
 
+[[iscsi-storage-limits]]
 == Límites de almacenamiento de iSCSI
 
 [cols="3*"]

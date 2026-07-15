@@ -20,6 +20,7 @@ Las últimas versiones de BlueXP también incluyen funciones y mejoras adicional
 
 
 
+[[9-14-0-p2-1-april-2024]]
 == 9.14.0 P2 (1 de abril de 2024)
 
 El parche 9.14.0 P2 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.
@@ -28,6 +29,7 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 
 
+[[9-14-0-p1-10-november-2023]]
 == 9.14.0 P1 (10 de noviembre de 2023)
 
 El parche 9.14.0 P1 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de nube si tiene un conector que ejecuta la versión 3.9.27 o posterior. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.
@@ -36,12 +38,14 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 
 
+[[9-14-0-29-september-2023]]
 == 9.14.0 (29 de septiembre de 2023)
 
 La versión General Availability (GA) de Cloud Volumes ONTAP 9.14.0 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.
 
 
 
+[[snapmirror-traffic-segregation-in-azure]]
 === Segregación del tráfico de SnapMirror en Azure
 
 Ahora puede segregar el tráfico de replicación de SnapMirror del tráfico de datos y de gestión. Esta nueva función permite segregar el tráfico de replicación de SnapMirror aprovechando una subred adicional que no se puede enrutar a la subred existente que se utiliza para el tráfico de datos y gestión.
@@ -50,12 +54,14 @@ Obtenga más información sobre cómo link:https://docs.netapp.com/us-en/bluexp-
 
 
 
+[[upgrade-notes]]
 == Notas de actualización
 
 Lea estas notas para obtener más información acerca de cómo actualizar a esta versión.
 
 
 
+[[how-to-upgrade]]
 === Cómo actualizar
 
 Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No debe actualizar Cloud Volumes ONTAP con System Manager o CLI. Hacerlo puede afectar a la estabilidad del sistema.
@@ -64,12 +70,14 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 
 
+[[supported-upgrade-path]]
 === Ruta de actualización admitida
 
 Puede actualizar a Cloud Volumes ONTAP 9.14.0 desde la versión 9.13.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
 
 
 
+[[required-version-of-the-connector]]
 === Versión necesaria del conector
 
 El conector BlueXP debe ejecutar la versión 3.9.27 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.14.0 y actualizar los sistemas existentes a la versión 9.14.0.
@@ -79,6 +87,7 @@ TIP: Las actualizaciones automáticas del conector están habilitadas de forma p
 
 
 
+[[downtime]]
 === Tiempo de inactividad
 
 * La actualización de un único sistema de nodos desconecta el sistema hasta 25 minutos, durante los cuales se interrumpe la I/O.
@@ -87,6 +96,7 @@ TIP: Las actualizaciones automáticas del conector están habilitadas de forma p
 
 
 
+[[c4-m4-and-r4-instances-no-longer-supported]]
 === las instancias c4, m4 y r4 ya no son compatibles
 
 En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.

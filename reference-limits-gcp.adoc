@@ -18,6 +18,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidad máxima del sistema por licencia
 
 La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
@@ -56,6 +57,7 @@ No, no lo hace. Los datos de un par de alta disponibilidad se replican de forma 
 
 
 
+[[aggregate-limits]]
 == Límites del agregado
 
 Cloud Volumes ONTAP agrupa los discos de Google Cloud Platform en _aggregates_. Los agregados proporcionan almacenamiento para volúmenes.
@@ -89,6 +91,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits]]
 == Límites de discos y organización en niveles
 
 En la siguiente tabla se muestra la capacidad máxima del sistema solo con discos, y con discos y organización en niveles de datos inactivos al almacenamiento de objetos. Los límites de discos son específicos para los discos que contienen datos de usuario. Entre los límites no se incluyen el disco de arranque, el disco raíz o la NVRAM.
@@ -117,6 +120,7 @@ Este límite está definido por los límites de la máquina virtual en Google Cl
 
 
 
+[[storage-vm-limits]]
 == Límites de máquinas virtuales de almacenamiento
 
 Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
@@ -161,6 +165,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[logical-storage-limits]]
 == Límites de almacenamiento lógico
 
 [cols="22,22,56"]
@@ -203,6 +208,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[iscsi-storage-limits]]
 == Límites de almacenamiento de iSCSI
 
 [cols="3*"]
@@ -244,6 +250,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 |===
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == Los pares de alta disponibilidad de Cloud Volumes ONTAP no admiten la devolución inmediata del almacenamiento
 
 Cuando un nodo se reinicia, el partner debe sincronizar los datos para que puedan devolver el almacenamiento. El tiempo que tarda en resincronizar los datos depende de la cantidad de datos escritos por los clientes mientras el nodo estaba inactivo y de la velocidad de escritura de datos durante el momento de la restauración.
